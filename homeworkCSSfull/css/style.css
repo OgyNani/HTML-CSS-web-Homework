@@ -30,14 +30,11 @@ header #logo {
     cursor: pointer;
 }
 
-header #logo img {
+header #logo span {
     font-size: 1.7em;
     line-height: 45px;
     margin-left: 40px;
     font-family: 'Yusei Magic', serif;
-    width: 50px;
-    background: none;
-    background-blend-mode: multiply;
 }
 
 #logo {
