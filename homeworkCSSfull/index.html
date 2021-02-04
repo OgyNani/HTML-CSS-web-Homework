@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>HW</title>
+
+</head>
+
+<body>
+    <header>
+        <div id="logo" onclick="slowScroll('#top')">
+            <span>WSAN</span>
+        </div>
+        <div id="about">
+            <a href="#" title="Музычка" onclick="slowScroll('#music')">Для комфорта</a>
+
+            <a href="#" title="WSAN" onclick="slowScroll('#main')">Что такое WSAN?</a>
+
+            <a href="#" title="Обо мне" onclick="slowScroll('#aboutme')">Автор</a>
+
+            <a href="#" title="Мои интересы и навыки" onclick="slowScroll('#inter')">Ин&На</a>
+
+            <a href="#" title="Картинки" onclick="slowScroll('#img')">Картиночки</a>
+        </div>
+    </header>
+
+    <div id="top">
+        <h1>Добро пожаловать!</h1>
+        <h3>я старался :)</h3>
+    </div>
+
+    <div id="music">
+        <h1 class="mus">Можешь включить музыку для хорошего настроения!</h1>
+        <iframe class="vidG" width="560" height="315" src="https://www.youtube.com/embed/5qap5aO4i9A" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+
+    <div id="main">
+        <div class="intro">
+            <h2>Что же значит навзвание страницы(WSAN)?</h2>
+            <span>Website about nothing!</span>
+
+        </div>
+        <div class="text">
+            <span>Да,возможно странное название,но ведь так и есть,он был создан для того,что бы показать что я умею и
+                чему учусь,так что собого смысла тут искать не стоит.Но для того что бы скрасить пробывание на этом
+                сайт,я думаю сделаю хоть что то полезное.</span>
+        </div>
+    </div>
+
+    <div id="aboutme">
+        <div class="meabout1">
+            <h2>Обо мне.</h2>
+            <span>Да да,иногда и про себя нужно рассказывать..</span>
+            <span>Начнем думаю с бейсика. Мегя зовут Вадим Соколов,мне 21 год,проживаю в Латвии,Рига..дальше я думаю не
+                буду говорить..</span>
+        </div>
+        <div class="metext">
+            <span>На данном этапе жизни я всерьез занимаюсь тем,что бы продвинуться в сфере IT,надюсь эта работа
+                показывает уровень который я на данный момент достиг и на которым не собираюсь останавливаться!</span>
+        </div>
+    </div>
+
+    <div id="inter">
+        <h2>Интересы и навыки</h2>
+        <div class="interr">
+            <h2 class="inn">Интересы</h2>
+            <ul>
+                <li>Музыка</li>
+                <li>Фотографирование</li>
+                <li>Путишествия</li>
+                <li>Программирование</li>
+                <li>Рисование</li>
+            </ul>
+        </div>
+        <div class="interrr">
+            <h2 class="navv">(не знаю как это назвать точно,но это не навыки)</h2>
+            <ul>
+                <li>Легко нахожу общий язык с людьми</li>
+                <li>Трезво мыслю в сложных ситуациях</li>
+                <li>Считаю,если делаешь работу,то сделай на 110%</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="img">
+        <h2>Просто Картинки</h2>
+        <h4>Залипнуть и отдохнуть</h4>
+
+        <div class="img">
+            <img src="https://images6.alphacoders.com/715/thumb-1920-715677.png" alt="" width="500px">
+        </div>
+
+        <div class="img">
+            <img src="https://www.wallpaperflare.com/static/546/704/62/cyberpunk-the-last-nigh-video-games-pixel-art-wallpaper.jpg"
+                alt="" width="500px">
+        </div>
+
+        <div class="img">
+            <img src="https://wallpapercave.com/wp/wp4751480.png" alt="" width="500px">
+        </div>
+
+        <div class="img">
+            <img src="https://cache.desktopnexus.com/thumbseg/1888/1888768-bigthumbnail.jpg" alt="" width="500px">
+        </div>
+
+        <div class="img">
+            <img src="https://wallpapercave.com/wp/wp4334662.jpg" alt="" width="500px">
+        </div>
+
+        <div class="img">
+            <img src="https://swall.teahub.io/photos/small/56-569703_waneella-pixel-art-gif.png" alt="" width="500px">
+        </div>
+
+        <div class="img">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkpZvUFDrzjSDXHalJFwvaHLLvdc2X9ECtSw&usqp=CAU"
+                alt="" width="500px">
+        </div>
+
+
+        <div class="img">
+            <img src="https://wallpapercave.com/wp/wp4727521.jpg" alt="" width="500px">
+        </div>
+    </div>
+
+    <div>
+        <div class="end">
+            <h4>Спасибо большое что досмотрели до конца!</h4>
+        </div>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        function slowScroll(id) {
+            $('html, body').animate({
+                scrollTop: $(id).offset().top
+            }, 500);
+        }
+
+        $(document).on("scroll", function () {
+            if ($(window).scrollTop() === 0)
+                $("header").removeClass("fixed");
+            else
+                $("header").attr("class", "fixed");
+        });
+    </script>
+
+</body>
+
+</html>
